@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IOT Based Dam Monitoring</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+ <script type="text/javascript" src="js_lus.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA9RePIE7w94O5XrH34fm89T5SWlHbjHuA",
+    authDomain: "iot-dam-monitoring-system.firebaseapp.com",
+    databaseURL: "https://iot-dam-monitoring-system.firebaseio.com",
+    projectId: "iot-dam-monitoring-system",
+    storageBucket: "iot-dam-monitoring-system.appspot.com",
+    messagingSenderId: "545324298213"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+</head>
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+
+</style>
+
+<body class="w3-light-grey">
+
+ 
+
+
+
+
+
+
+
+  
+ <div class="w3-row-padding w3-margin-bottom" style="margin-top:25px">
+    <div class="w3-quarter">
+      <div id = "red" class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-exclamation-triangle w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3 id="quake">52</h3>
+        </div>
+        <div class="w3-clear"></div>
+        
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div id="square" class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class="fa fa-tint w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3 id = "WaterLevel">99</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Water Level</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-teal w3-padding-16">
+        <div class="w3-left"><i class="fa fa-recycle w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3 id="Humidity">23</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Humidity</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="	fa fa-thermometer w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3 id="Temperature">50</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Temperature</h4>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third">
+        <h5>Regions</h5>
+        
+		<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3385.545092946757!2d76.21870611434818!3d10.554109492472628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d10.5542249!2d76.2163673!4m5!1s0x3ba7eee301ff400f%3A0x8851e3d8fc9c94f0!2sGovernment+Engineering+College%2C+Ramavarmapuram+Engineering+College+P+O%2C+Viyyur%2C+Pandikkavu%2C+Thrissur%2C+Kerala+680009!3m2!1d10.5545797!2d76.2246613!5e1!3m2!1sen!2sin!4v1550032083158" width="400" height="300" frameborder="0" style="border:0  float:left" allowfullscreen></iframe>
+      </div>
+      <div class="w3-twothird" >
+        <h5>About...</h5>
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>Viewers </td>
+            <td><i>1 M+</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
+            <td>Water level Alerts </td>
+            <td><i>5 mins ago</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-users w3-text-yellow w3-large"></i></td>
+            <td>Earthquake Alerts </td>
+            <td><i>3hrs ago</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-comment w3-text-red w3-large"></i></td>
+            <td>Nearby evacuation camps</td>
+            <td><i><a href="#" style="color : blue"> Contacts </a></i></td>
+          </tr>
+          
+		  <tr>
+            <td><i class="fa fa-comment w3-text-red w3-large"></i></td>
+            <td>Contact Us </td>
+            <td><i><a href="contact.html" style="color : blue"> know more</a></i></td>
+          </tr>
+        
+          <tr>
+            <td><i class="fa fa-share-alt w3-text-green w3-large"></i></td>
+            <td>About Us</td>
+            <td><i><a href="#" style="color : blue">know more..</a></i></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
+<div>
+
+
+<marquee style="color: red">Emergency Contacts: +919497263456,+919442563624</marquee>
+	<script>
+	function lastModified() {
+    var modiDate = new Date(document.lastModified);
+    var showAs = modiDate.getDate() + "-" + (modiDate.getMonth() + 1) + "-" + modiDate.getFullYear();
+    return showAs
+}
+
+function GetTime() {
+    var modiDate = new Date();
+    var Seconds
+
+    if (modiDate.getSeconds() < 10) {
+        Seconds = "0" + modiDate.getSeconds();
+    } else {
+        Seconds = modiDate.getSeconds();
+    }
+
+    var modiDate = new Date();
+    var CurTime = modiDate.getHours() + ":" + modiDate.getMinutes() + ":" + Seconds
+    return CurTime
+}
+
+document.write("Last updated on ")
+document.write(lastModified() + " @ " + GetTime());
+
+document.write("");
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  var database = firebase.database();
+  var ref1 = firebase.database().ref("/CollectedData").child("WaterLevel");
+
+ref1.on("value", function(snapshot) {
+  var WaterLevel = parseInt(snapshot.val());
+  document.getElementById("WaterLevel").innerHTML = WaterLevel;
+  if(WaterLevel>35 && WaterLevel<=38){
+    document.getElementById("square").className = "w3-container w3-yellow w3-padding-16";
+  }
+  else if(WaterLevel>38 && WaterLevel<=40){
+    document.getElementById("square").className = "w3-container w3-orange w3-padding-16";
+
+  }
+  else if(WaterLevel>40)
+  {
+    document.getElementById("square").className = "w3-container w3-red w3-padding-16"; 
+  }
+  else
+  {document.getElementById("square").className = "w3-container w3-blue w3-padding-16";}
+   
+}, function (error) {
+   console.log("Error: " + error.code);
+});
+var ref2 = firebase.database().ref("/CollectedData").child("Humidity");
+
+ref2.on("value", function(snapshot) {
+
+  document.getElementById("Humidity").innerHTML = snapshot.val();
+  ;
+   
+}, function (error) {
+   console.log("Error: " + error.code);
+});
+var ref3 = firebase.database().ref("/CollectedData").child("Temperature");
+
+ref3.on("value", function(snapshot) {
+  document.getElementById("Temperature").innerHTML = snapshot.val();
+   
+}, function (error) {
+   console.log("Error: " + error.code);
+});
+var ref4= firebase.database().ref("/CollectedData").child("VibrationLevel");
+
+ref4.on("value", function(snapshot) {
+  var VibrationLevel = snapshot.val();
+  document.getElementById("quake").innerHTML = VibrationLevel;
+
+
+   
+}, function (error) {
+   console.log("Error: " + error.code);
+});
+
+
+  
+  </script>
+</div>
+</body>
+</html>

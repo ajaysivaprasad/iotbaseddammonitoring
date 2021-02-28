@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "545324298213",
+    "firebase_url": "https://iot-dam-monitoring-system.firebaseio.com",
+    "project_id": "iot-dam-monitoring-system",
+    "storage_bucket": "iot-dam-monitoring-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545324298213:android:3f2d60e08009709a",
+        "android_client_info": {
+          "package_name": "com.androjlk.jithin.iotdamsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545324298213-4qtcpols2kf897im4drvj7q73f13phmm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androjlk.jithin.iotdamsystem",
+            "certificate_hash": "a2e5aa5bf0a4c574900e28254a127c4c6b5fedbd"
+          }
+        },
+        {
+          "client_id": "545324298213-giagk05c0qptttsrd8kaibfmh3j5kfj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWjdfua_RRNehUqTbk2hfUB29I99wyHSU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545324298213-giagk05c0qptttsrd8kaibfmh3j5kfj9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545324298213:android:ab077ee5760c4378",
+        "android_client_info": {
+          "package_name": "com.example.iotbaseddammonitoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545324298213-r5va85tlelbsk9ebnr7r6l9pri8pbpkr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iotbaseddammonitoring",
+            "certificate_hash": "99a317dd33b2ea5d8408826865474cbd48497aad"
+          }
+        },
+        {
+          "client_id": "545324298213-giagk05c0qptttsrd8kaibfmh3j5kfj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWjdfua_RRNehUqTbk2hfUB29I99wyHSU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545324298213-giagk05c0qptttsrd8kaibfmh3j5kfj9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545324298213:android:8ff2511b7aeda01f",
+        "android_client_info": {
+          "package_name": "com.example.iotdammonitoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545324298213-p02coue5ear494vetkr5klcuo0fgsofe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iotdammonitoring",
+            "certificate_hash": "99a317dd33b2ea5d8408826865474cbd48497aad"
+          }
+        },
+        {
+          "client_id": "545324298213-giagk05c0qptttsrd8kaibfmh3j5kfj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWjdfua_RRNehUqTbk2hfUB29I99wyHSU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545324298213-giagk05c0qptttsrd8kaibfmh3j5kfj9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
